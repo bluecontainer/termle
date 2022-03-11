@@ -6,8 +6,10 @@ const argv = yargs(process.argv.splice(2))
     .help("help")
     .alias("h", "help")
     .alias("v", "version")
-    .alias("cb", "colorblind")
-    .describe("cb", "Render in colorblind-friendly mode")
+    .alias("d", "daily")
+    .describe("d", "Pick a new word every day")
+    .alias("e", "easy")
+    .describe("e", "no limit to the number of guesses")
     .version().argv;
 
 export default argv;
